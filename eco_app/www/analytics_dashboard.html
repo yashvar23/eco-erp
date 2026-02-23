@@ -1,0 +1,92 @@
+{% extends "templates/web.html" %}
+
+{% block header %}
+<script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
+<style>
+    .eco-dashboard { padding: 20px; background: #f8f9fa; min-height: 100vh; }
+    .eco-card {
+        background: white; border-radius: 8px; padding: 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px;
+        text-align: center;
+    }
+    .eco-card-value { font-size: 2rem; font-weight: bold; margin: 10px 0; }
+    .eco-card-label { color: #6c757d; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .eco-chart-container { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    
+    h1 { margin-bottom: 30px; font-weight: 700; color: #2c3e50; }
+    
+    /* Grid system */
+    .row { display: flex; flex-wrap: wrap; margin: -10px; }
+    .col-md-3 { flex: 0 0 25%; max-width: 25%; padding: 10px; }
+    .col-md-6 { flex: 0 0 50%; max-width: 50%; padding: 10px; }
+    .col-md-12 { flex: 0 0 100%; max-width: 100%; padding: 10px; }
+    
+    @media(max-width: 768px) {
+        .col-md-3, .col-md-6 { flex: 0 0 100%; max-width: 100%; }
+    }
+</style>
+{% endblock %}
+
+{% block page_content %}
+<div class="eco-dashboard">
+    <h1>ECO Analytics Dashboard</h1>
+    
+    <div class="row">
+        {% for card in cards %}
+        <div class="col-md-3">
+            <div class="eco-card" style="border-top: 4px solid var(--{{ card.color }});">
+                <div class="eco-card-label">{{ card.label }}</div>
+                <div class="eco-card-value">{{ card.value }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="eco-chart-container">
+                <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: #495057;">Application Stage Funnel</h3>
+                <div id="chart-funnel"></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="eco-chart-container">
+                <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: #495057;">Demo Conversion Metric</h3>
+                <div id="chart-demo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const funnelData = {
+            labels: {{ funnel_labels | safe }},
+            datasets: [
+                {
+                    name: "Count", type: "bar",
+                    values: {{ funnel_data | safe }}
+                }
+            ]
+        };
+
+        const funnelChart = new frappe.Chart("#chart-funnel", {
+            data: funnelData,
+            type: 'bar',
+            height: 250,
+            colors: ['#3498db']
+        });
+        
+        const demoData = {
+            labels: ["Jan", "Feb", "Mar", "Apr"],
+            datasets: [{name: "Revenue", type: "line", values: [100, 250, 420, 600]}]
+        };
+        const demoChart = new frappe.Chart("#chart-demo", {
+            data: demoData,
+            type: 'line',
+            height: 250,
+            colors: ['#2ecc71']
+        });
+    });
+</script>
+{% endblock %}

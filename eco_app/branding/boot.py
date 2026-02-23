@@ -35,9 +35,7 @@ def extend_bootinfo(bootinfo):
     eco_roles = {
         "ECO Manager",
         "ECO Counselor",
-        "ECO Accounts",
-        "ECO Visa Officer",
-        "ECO Student",
+        "ECO Telecaller",
     }
 
     if not user_roles.intersection(eco_roles):

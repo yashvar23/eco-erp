@@ -148,27 +148,6 @@
   {
    "read": 1,
    "role": "ECO Counselor"
-  },
-  {
-   "read": 1,
-   "role": "ECO Accounts"
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ECO Visa Officer",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "if_owner": 1,
-   "read": 1,
-   "role": "ECO Student"
   }
  ],
  "row_format": "Dynamic",

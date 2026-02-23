@@ -36,18 +36,15 @@ def _collect_recipients(doc):
         if counselor_email:
             recipients.add(counselor_email)
 
-    student = frappe.db.get_value(
+    # Only request 'email' — 'student_email' and 'email_id' do NOT exist on Student Profile.
+    student_email = frappe.db.get_value(
         "Student Profile",
         doc.student_profile,
-        ["email", "student_email", "email_id"],
-        as_dict=True,
+        "email",
     )
-    if student:
-        for fieldname in ("email", "student_email", "email_id"):
-            value = student.get(fieldname)
-            if value:
-                recipients.add(value)
-                break
+    if student_email:
+        recipients.add(student_email)
+
     return recipients
 
 

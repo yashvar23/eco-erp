@@ -16,6 +16,8 @@ license = { text = "MIT" }
 authors = [
     { name = "European Concept Overseas" }
 ]
-
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["eco_app*"]

@@ -107,14 +107,6 @@
   {
    "read": 1,
    "role": "ECO Counselor"
-  },
-  {
-   "read": 1,
-   "role": "ECO Accounts"
-  },
-  {
-   "read": 1,
-   "role": "ECO Visa Officer"
   }
  ],
  "row_format": "Dynamic",

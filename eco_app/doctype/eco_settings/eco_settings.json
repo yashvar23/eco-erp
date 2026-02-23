@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "creation": "2026-02-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "whatsapp_integration_section",
+  "whatsapp_enabled",
+  "whatsapp_provider",
+  "default_country_code",
+  "column_break_1",
+  "whatsapp_api_url",
+  "whatsapp_api_token"
+ ],
+ "fields": [
+  {
+   "fieldname": "whatsapp_integration_section",
+   "fieldtype": "Section Break",
+   "label": "WhatsApp Integration"
+  },
+  {
+   "default": "0",
+   "fieldname": "whatsapp_enabled",
+   "fieldtype": "Check",
+   "label": "WhatsApp Enabled"
+  },
+  {
+   "depends_on": "eval:doc.whatsapp_enabled==1",
+   "fieldname": "whatsapp_provider",
+   "fieldtype": "Select",
+   "label": "WhatsApp Provider",
+   "options": "WATI\nTwilio\nMeta Direct"
+  },
+  {
+   "default": "+91",
+   "fieldname": "default_country_code",
+   "fieldtype": "Data",
+   "label": "Default Country Code"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.whatsapp_enabled==1",
+   "fieldname": "whatsapp_api_url",
+   "fieldtype": "Data",
+   "label": "WhatsApp API URL"
+  },
+  {
+   "depends_on": "eval:doc.whatsapp_enabled==1",
+   "fieldname": "whatsapp_api_token",
+   "fieldtype": "Password",
+   "label": "WhatsApp API Token"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-02-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ECO App",
+ "name": "ECO Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

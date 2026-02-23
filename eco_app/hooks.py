@@ -36,11 +36,20 @@ scheduler_events = {
     "daily": [
         "eco_app.eco_app.tasks.tasks.send_document_pending_reminders",
         "eco_app.eco_app.tasks.tasks.check_upcoming_visa_appointments",
+        "eco_app.eco_app.tasks.tasks.check_document_expiry",
+        "eco_app.eco_app.tasks.tasks.check_score_expiry",
+        "eco_app.eco_app.tasks.tasks.check_intake_deadlines",
+        "eco_app.eco_app.tasks.tasks.check_overdue_tasks",
+        "eco_app.eco_app.tasks.tasks.check_offer_letter_deadlines",
+        "eco_app.eco_app.tasks.tasks.check_overdue_installments",
     ],
     "weekly": [
         "eco_app.eco_app.tasks.tasks.generate_weekly_counselor_summary",
     ],
 }
+
+# ── Frappe Calendar integration (Feature 06) ─────────────────────
+calendars = ["Intake Calendar Entry"]
 
 fixtures = [
     "Role",

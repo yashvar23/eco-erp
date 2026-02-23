@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "creation": "2026-02-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_details_section",
+  "student",
+  "test_type",
+  "test_date",
+  "expiry_date",
+  "score_details_section",
+  "overall_score",
+  "listening",
+  "reading",
+  "writing",
+  "speaking",
+  "requirement_section",
+  "target_university",
+  "required_score",
+  "meets_requirement",
+  "other_details_section",
+  "result_document",
+  "remarks",
+  "company"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student & Test Details"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student",
+   "options": "Student Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Test Type",
+   "options": "IELTS Academic\nIELTS General\nTOEFL iBT\nPTE Academic\nDuolingo\nCambridge C1\nCambridge C2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Test Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiry Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "score_details_section",
+   "fieldtype": "Section Break",
+   "label": "Score Details"
+  },
+  {
+   "fieldname": "overall_score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Overall Score",
+   "reqd": 1
+  },
+  {
+   "fieldname": "listening",
+   "fieldtype": "Float",
+   "label": "Listening"
+  },
+  {
+   "fieldname": "reading",
+   "fieldtype": "Float",
+   "label": "Reading"
+  },
+  {
+   "fieldname": "writing",
+   "fieldtype": "Float",
+   "label": "Writing"
+  },
+  {
+   "fieldname": "speaking",
+   "fieldtype": "Float",
+   "label": "Speaking"
+  },
+  {
+   "fieldname": "requirement_section",
+   "fieldtype": "Section Break",
+   "label": "Requirement Check"
+  },
+  {
+   "fieldname": "target_university",
+   "fieldtype": "Link",
+   "label": "Target University",
+   "options": "University Master"
+  },
+  {
+   "fieldname": "required_score",
+   "fieldtype": "Float",
+   "label": "Required Score",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "meets_requirement",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Meets Requirement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "other_details_section",
+   "fieldtype": "Section Break",
+   "label": "Other Details"
+  },
+  {
+   "fieldname": "result_document",
+   "fieldtype": "Attach",
+   "label": "Result Document"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ECO App",
+ "name": "Language Test Score",
+ "naming_rule": "Expression",
+ "autoname": "ECO-LTS-.YYYY.-.####",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "role": "ECO Counselor"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "write": 1,
+   "role": "ECO Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,249 @@
+{
+ "actions": [],
+ "creation": "2026-02-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "student",
+  "student_application",
+  "university",
+  "course",
+  "company",
+  "column_break_1",
+  "offer_type",
+  "offer_date",
+  "acceptance_deadline",
+  "status",
+  "financials_section",
+  "tuition_fee_offered",
+  "column_break_f",
+  "scholarship_included",
+  "scholarship_amount",
+  "conditions_section",
+  "conditions",
+  "conditions_met",
+  "decision_section",
+  "student_decision",
+  "decision_date",
+  "documents_section",
+  "offer_letter_document",
+  "column_break_d",
+  "acceptance_letter_document",
+  "system_section",
+  "alert_sent"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "Offer Details"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student",
+   "options": "Student Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_application",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Application",
+   "options": "Student Application",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "student_application.university",
+   "fieldname": "university",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "University",
+   "options": "University Master",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student_application.course",
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course Master",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "offer_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Offer Type",
+   "options": "Conditional\nUnconditional",
+   "reqd": 1
+  },
+  {
+   "fieldname": "offer_date",
+   "fieldtype": "Date",
+   "label": "Offer Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "acceptance_deadline",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Acceptance Deadline",
+   "reqd": 1
+  },
+  {
+   "default": "Received",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Received\nUnder Review\nAccepted\nRejected\nExpired"
+  },
+  {
+   "fieldname": "financials_section",
+   "fieldtype": "Section Break",
+   "label": "Financials"
+  },
+  {
+   "fieldname": "tuition_fee_offered",
+   "fieldtype": "Currency",
+   "label": "Tuition Fee Offered"
+  },
+  {
+   "fieldname": "column_break_f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scholarship_included",
+   "fieldtype": "Check",
+   "label": "Scholarship Included"
+  },
+  {
+   "depends_on": "eval:doc.scholarship_included==1",
+   "fieldname": "scholarship_amount",
+   "fieldtype": "Currency",
+   "label": "Scholarship Amount"
+  },
+  {
+   "depends_on": "eval:doc.offer_type=='Conditional'",
+   "fieldname": "conditions_section",
+   "fieldtype": "Section Break",
+   "label": "Conditions"
+  },
+  {
+   "fieldname": "conditions",
+   "fieldtype": "Text Editor",
+   "label": "Conditions"
+  },
+  {
+   "fieldname": "conditions_met",
+   "fieldtype": "Check",
+   "label": "Conditions Met"
+  },
+  {
+   "fieldname": "decision_section",
+   "fieldtype": "Section Break",
+   "label": "Decision"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "student_decision",
+   "fieldtype": "Select",
+   "label": "Student Decision",
+   "options": "Pending\nAccepted\nRejected\nDeferred"
+  },
+  {
+   "depends_on": "eval:doc.student_decision!='Pending'",
+   "fieldname": "decision_date",
+   "fieldtype": "Date",
+   "label": "Decision Date"
+  },
+  {
+   "fieldname": "documents_section",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "offer_letter_document",
+   "fieldtype": "Attach",
+   "label": "Offer Letter Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_d",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.student_decision=='Accepted'",
+   "fieldname": "acceptance_letter_document",
+   "fieldtype": "Attach",
+   "label": "Acceptance Letter Document"
+  },
+  {
+   "fieldname": "system_section",
+   "fieldtype": "Section Break",
+   "label": "System Info",
+   "collapsible": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "alert_sent",
+   "fieldtype": "Check",
+   "label": "Alert Sent",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ECO App",
+ "name": "Offer Letter",
+ "naming_rule": "Expression",
+ "autoname": "ECO-OFL-.YYYY.-.####",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "role": "ECO Counselor"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "write": 1,
+   "role": "ECO Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "title_field": "student",
+ "search_fields": "student,student_application,university"
+}

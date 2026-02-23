@@ -9,6 +9,8 @@ from frappe import _
 from frappe.model.document import Document
 from frappe.utils import now_datetime, validate_email_address
 
+from eco_app.eco_app.utils.whatsapp import send_application_update
+
 
 STAGE_SEQUENCE = [
     "New Inquiry",
@@ -44,6 +46,7 @@ class StudentProfile(Document):
         self._validate_passport_for_visa_stage()
         self._validate_stage_transition()
         self._validate_checklist_before_applied()
+        self._validate_document_checklist_rows()
 
     def before_save(self):
         self._compute_student_name()
@@ -60,6 +63,7 @@ class StudentProfile(Document):
                     self.application_stage, self.name
                 )
             )
+            send_application_update(self.name, self.application_stage)
             frappe.logger("eco_app").info(
                 "Student %s moved to stage %s", self.name, self.application_stage
             )
@@ -150,6 +154,23 @@ class StudentProfile(Document):
                     ", ".join(missing)
                 )
             )
+
+    def _validate_document_checklist_rows(self):
+        """Explicitly validate each child row — Frappe v16 does not auto-call
+        child DocType validate() during parent save."""
+        for row in self.get("documents") or []:
+            if row.status == "Verified" and not row.verified_on:
+                frappe.throw(
+                    _("Row {0}: Verified On is required when status is Verified.").format(
+                        row.idx
+                    )
+                )
+            if row.status in {"Submitted", "Verified"} and not row.attached_file:
+                frappe.throw(
+                    _("Row {0}: Attached File is required when status is Submitted or Verified.").format(
+                        row.idx
+                    )
+                )
 
     def _compute_student_name(self):
         parts = [self.first_name, self.middle_name, self.last_name]

@@ -1,74 +1,119 @@
 {
- "actions": [],
- "creation": "2026-02-23 00:00:00.000000",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "document_type",
-  "is_mandatory",
-  "status",
-  "attached_file",
-  "submitted_on",
-  "verified_on",
-  "remarks"
- ],
- "fields": [
-  {
-   "fieldname": "document_type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Document Type",
-   "options": "Passport\nTranscripts\nSOP\nLOR\nCV\nEnglish Test\nFinancial Proof\nOffer Letter\nVisa Docs",
-   "reqd": 1
-  },
-  {
-   "default": "1",
-   "fieldname": "is_mandatory",
-   "fieldtype": "Check",
-   "in_list_view": 1,
-   "label": "Is Mandatory",
-   "reqd": 1
-  },
-  {
-   "default": "Pending",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Status",
-   "options": "Pending\nSubmitted\nVerified\nRejected",
-   "reqd": 1
-  },
-  {
-   "fieldname": "attached_file",
-   "fieldtype": "Attach",
-   "label": "Attached File"
-  },
-  {
-   "fieldname": "submitted_on",
-   "fieldtype": "Datetime",
-   "label": "Submitted On",
-   "read_only": 1
-  },
-  {
-   "fieldname": "verified_on",
-   "fieldtype": "Datetime",
-   "label": "Verified On"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Small Text",
-   "label": "Remarks"
-  }
- ],
- "index_web_pages_for_search": 1,
- "istable": 1,
- "links": [],
- "module": "ECO App",
- "name": "Document Checklist Item",
- "permissions": [],
- "row_format": "Dynamic",
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": []
+    "actions": [],
+    "creation": "2026-02-23 00:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "document_type",
+        "is_mandatory",
+        "status",
+        "attached_file",
+        "submitted_on",
+        "verified_on",
+        "remarks",
+        "section_expiry",
+        "issue_date",
+        "expiry_date",
+        "days_to_expiry",
+        "is_expired",
+        "expiry_alert_sent"
+    ],
+    "fields": [
+        {
+            "fieldname": "document_type",
+            "fieldtype": "Select",
+            "in_list_view": 1,
+            "label": "Document Type",
+            "options": "Passport\nTranscripts\nSOP\nLOR\nCV\nEnglish Test\nFinancial Proof\nOffer Letter\nVisa Docs\nPolice Clearance\nMedical Certificate\nBank Statement",
+            "reqd": 1
+        },
+        {
+            "default": "1",
+            "fieldname": "is_mandatory",
+            "fieldtype": "Check",
+            "in_list_view": 1,
+            "label": "Is Mandatory",
+            "reqd": 1
+        },
+        {
+            "default": "Pending",
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "in_list_view": 1,
+            "label": "Status",
+            "options": "Pending\nSubmitted\nVerified\nRejected",
+            "reqd": 1
+        },
+        {
+            "fieldname": "attached_file",
+            "fieldtype": "Attach",
+            "label": "Attached File"
+        },
+        {
+            "fieldname": "submitted_on",
+            "fieldtype": "Datetime",
+            "label": "Submitted On",
+            "read_only": 1
+        },
+        {
+            "fieldname": "verified_on",
+            "fieldtype": "Datetime",
+            "label": "Verified On"
+        },
+        {
+            "fieldname": "remarks",
+            "fieldtype": "Small Text",
+            "label": "Remarks"
+        },
+        {
+            "collapsible": 1,
+            "fieldname": "section_expiry",
+            "fieldtype": "Section Break",
+            "label": "Document Validity & Expiry"
+        },
+        {
+            "fieldname": "issue_date",
+            "fieldtype": "Date",
+            "label": "Issue Date"
+        },
+        {
+            "fieldname": "expiry_date",
+            "fieldtype": "Date",
+            "label": "Expiry Date"
+        },
+        {
+            "fieldname": "days_to_expiry",
+            "fieldtype": "Int",
+            "label": "Days to Expiry",
+            "read_only": 1
+        },
+        {
+            "default": "0",
+            "fieldname": "is_expired",
+            "fieldtype": "Check",
+            "label": "Is Expired",
+            "read_only": 1
+        },
+        {
+            "default": "0",
+            "fieldname": "expiry_alert_sent",
+            "fieldtype": "Check",
+            "label": "Expiry Alert Sent",
+            "read_only": 1
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "istable": 1,
+    "links": [],
+    "module": "ECO App",
+    "modified": "2026-02-23 00:00:00.000000",
+    "modified_by": "Administrator",
+    "name": "Document Checklist Item",
+    "owner": "Administrator",
+    "permissions": [],
+    "row_format": "Dynamic",
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
 }

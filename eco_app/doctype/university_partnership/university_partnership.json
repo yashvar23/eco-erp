@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "creation": "2026-02-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_details",
+  "university",
+  "partnership_type",
+  "status",
+  "company",
+  "column_break_1",
+  "start_date",
+  "end_date",
+  "auto_renewal",
+  "mou_document",
+  "financial_details",
+  "commission_percent",
+  "commission_type",
+  "column_break_2",
+  "payment_terms",
+  "minimum_students_per_year",
+  "contact_details",
+  "contact_person",
+  "contact_email",
+  "column_break_3",
+  "contact_phone",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_details",
+   "fieldtype": "Section Break",
+   "label": "General Details"
+  },
+  {
+   "fieldname": "university",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "University",
+   "options": "University Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partnership_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Partnership Type",
+   "options": "MOU\nAuthorized Representative\nPreferred Partner\nAssociate Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nExpiring Soon\nExpired\nUnder Negotiation\nSuspended",
+   "default": "Active"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "auto_renewal",
+   "fieldtype": "Check",
+   "label": "Auto Renewal",
+   "default": "0"
+  },
+  {
+   "fieldname": "mou_document",
+   "fieldtype": "Attach",
+   "label": "MOU Document"
+  },
+  {
+   "fieldname": "financial_details",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "commission_percent",
+   "fieldtype": "Float",
+   "label": "Commission Percent"
+  },
+  {
+   "fieldname": "commission_type",
+   "fieldtype": "Select",
+   "label": "Commission Type",
+   "options": "\nPer Enrolled Student\nPer Application\nAnnual Fixed"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Select",
+   "label": "Payment Terms",
+   "options": "\nOn Enrollment\nOn Visa Approval\nOn Course Completion\n30 Days Invoice"
+  },
+  {
+   "fieldname": "minimum_students_per_year",
+   "fieldtype": "Int",
+   "label": "Minimum Students Per Year"
+  },
+  {
+   "fieldname": "contact_details",
+   "fieldtype": "Section Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_phone",
+   "fieldtype": "Data",
+   "label": "Contact Phone"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ECO App",
+ "name": "University Partnership",
+ "naming_rule": "Expression",
+ "autoname": "format:ECO-UPA-{YYYY}-{####}",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -36,7 +36,9 @@ class TestStudentProfile(FrappeTestCase):
         student = self.make_student_profile(email=f"student.workflow.{frappe.generate_hash(length=6)}@example.com")
         for next_stage in ["Counseling", "Documents Pending"]:
             student.application_stage = next_stage
+            student.flags.ignore_workflow = True
             student.save(ignore_permissions=True)
+            student.flags.ignore_workflow = False
 
         student.reload()
         for row in student.documents:
@@ -45,7 +47,9 @@ class TestStudentProfile(FrappeTestCase):
             row.verified_on = frappe.utils.now_datetime()
 
         student.application_stage = "Applied"
+        student.flags.ignore_workflow = True
         student.save(ignore_permissions=True)
+        student.flags.ignore_workflow = False
         self.assertEqual(student.application_stage, "Applied")
 
     def test_permissions_guest_cannot_create_student_profile(self):

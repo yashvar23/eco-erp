@@ -26,7 +26,7 @@ class TestStudentJourneyWorkflow(FrappeTestCase):
             (row.state, row.action, row.next_state, row.allowed) for row in workflow.transitions
         }
         self.assertIn(("New Inquiry", "Assign Counselor", "Counseling", "ECO Manager"), transition_keys)
-        self.assertIn(("Visa Applied", "Approve Visa", "Visa Approved", "ECO Visa Officer"), transition_keys)
+        self.assertIn(("Visa Applied", "Approve Visa", "Visa Approved", "ECO Counselor"), transition_keys)
 
     def test_workflow_assign_counselor_transition_has_condition(self):
         workflow = self.make_workflow_doc()

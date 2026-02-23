@@ -119,3 +119,22 @@ a,
     font-weight: 700;
     color: var(--eco-primary);
 }
+
+/* --- ECO WHITE-LABEL OVERRIDES --- */
+
+/* 1. Hide the Help Dropdown icon entirely */
+.dropdown-help {
+    display: none !important;
+}
+
+/* 2. Hide 'Powered by Frappe' in list views and web portals */
+.frappe-footer,
+.powered-by-frappe,
+a[href*="frappe.io"] {
+    display: none !important;
+}
+
+/* 3. Hide ERPNext shortcut banners if they exist */
+.shortcut-erpnext {
+    display: none !important;
+}

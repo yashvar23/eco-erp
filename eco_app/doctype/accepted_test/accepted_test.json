@@ -1,0 +1,31 @@
+{
+    "actions": [],
+    "creation": "2026-02-23 00:00:00.000000",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "editable_grid": 1,
+    "istable": 1,
+    "field_order": [
+        "test_type"
+    ],
+    "fields": [
+        {
+            "fieldname": "test_type",
+            "fieldtype": "Select",
+            "in_list_view": 1,
+            "label": "Test Type",
+            "options": "IELTS Academic\nIELTS General\nTOEFL iBT\nPTE Academic\nDuolingo\nCambridge C1\nCambridge C2",
+            "reqd": 1
+        }
+    ],
+    "links": [],
+    "modified": "2026-02-23 00:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "ECO App",
+    "name": "Accepted Test",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "track_changes": 1
+}

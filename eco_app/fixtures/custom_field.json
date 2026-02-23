@@ -1,1 +1,43 @@
-[]
+[
+    {
+        "doctype": "Custom Field",
+        "name": "University Master-min_ielts_score",
+        "dt": "University Master",
+        "fieldname": "min_ielts_score",
+        "fieldtype": "Float",
+        "insert_after": "contact_phone",
+        "label": "Min IELTS Score",
+        "module": "ECO App"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "University Master-min_toefl_score",
+        "dt": "University Master",
+        "fieldname": "min_toefl_score",
+        "fieldtype": "Int",
+        "insert_after": "min_ielts_score",
+        "label": "Min TOEFL Score",
+        "module": "ECO App"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "University Master-min_pte_score",
+        "dt": "University Master",
+        "fieldname": "min_pte_score",
+        "fieldtype": "Int",
+        "insert_after": "min_toefl_score",
+        "label": "Min PTE Score",
+        "module": "ECO App"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "University Master-accepted_tests",
+        "dt": "University Master",
+        "fieldname": "accepted_tests",
+        "fieldtype": "Table",
+        "options": "Accepted Test",
+        "insert_after": "min_pte_score",
+        "label": "Accepted Tests",
+        "module": "ECO App"
+    }
+]

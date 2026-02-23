@@ -18,12 +18,21 @@ window.eco.branding = {
 
 frappe.ready(() => {
     // Normalize page title
+    frappe.boot.app_name = "ECO ERP";
+
     const syncTitle = () => {
-        if (!document.title || document.title.includes("Frappe") || document.title.includes("ERPNext")) {
+        if (document.title.includes("Frappe") || document.title.includes("ERPNext")) {
             document.title = "ECO ERP";
         }
     };
 
     syncTitle();
-    setTimeout(syncTitle, 300);
+
+    if (frappe.router) {
+        frappe.router.on('change', () => {
+            setTimeout(syncTitle, 50);
+            setTimeout(syncTitle, 200);
+            setTimeout(syncTitle, 500); // Catch async title overrides
+        });
+    }
 });

@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"header_kpi\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>KPI Overview</span>\",\"col\":12}},{\"id\":\"nc_total_students\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Students\",\"col\":3}},{\"id\":\"nc_active_apps\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Applications\",\"col\":3}},{\"id\":\"nc_visa_approvals\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visa Approvals\",\"col\":3}},{\"id\":\"nc_total_commissions\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Commissions\",\"col\":3}},{\"id\":\"header_operations\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>Operations</span>\",\"col\":12}},{\"id\":\"shortcut_student_profile\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Profile\",\"col\":3}},{\"id\":\"shortcut_student_application\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Application\",\"col\":3}},{\"id\":\"shortcut_visa_application\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visa Application\",\"col\":3}},{\"id\":\"shortcut_commission_record\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Commission Record\",\"col\":3}},{\"id\":\"header_masters\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>Masters</span>\",\"col\":12}},{\"id\":\"shortcut_university_master\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"University Master\",\"col\":3}},{\"id\":\"shortcut_course_master\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Course Master\",\"col\":3}},{\"id\":\"header_reports\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>Reports</span>\",\"col\":12}},{\"id\":\"shortcut_monthly_applications\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Monthly Applications\",\"col\":4}},{\"id\":\"shortcut_counselor_performance\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Counselor Performance\",\"col\":4}},{\"id\":\"shortcut_country_wise_applications\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Country Wise Applications\",\"col\":4}}]",
+ "content": "[{\"id\": \"header_kpi\", \"type\": \"header\", \"data\": {\"text\": \"<span style='color:#0B2E6B'>KPI Overview</span>\", \"col\": 12}}, {\"id\": \"nc_total_students\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Total Students\", \"col\": 3}}, {\"id\": \"nc_active_apps\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Active Applications\", \"col\": 3}}, {\"id\": \"nc_visa_approvals\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Visa Approvals\", \"col\": 3}}, {\"id\": \"nc_total_commissions\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Total Commissions\", \"col\": 3}}, {\"id\": \"header_operations\", \"type\": \"header\", \"data\": {\"text\": \"<span style='color:#0B2E6B'>Operations</span>\", \"col\": 12}}, {\"id\": \"shortcut_student_profile\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Student Profile\", \"col\": 3}}, {\"id\": \"shortcut_student_application\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Student Application\", \"col\": 3}}, {\"id\": \"shortcut_visa_application\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Visa Application\", \"col\": 3}}, {\"id\": \"shortcut_commission_record\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Commission Record\", \"col\": 3}}, {\"id\": \"header_masters\", \"type\": \"header\", \"data\": {\"text\": \"<span style='color:#0B2E6B'>Masters</span>\", \"col\": 12}}, {\"id\": \"shortcut_university_master\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"University Master\", \"col\": 3}}, {\"id\": \"shortcut_course_master\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Course Master\", \"col\": 3}}, {\"id\": \"header_reports\", \"type\": \"header\", \"data\": {\"text\": \"<span style='color:#0B2E6B'>Reports</span>\", \"col\": 12}}, {\"id\": \"shortcut_monthly_applications\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Monthly Applications\", \"col\": 4}}, {\"id\": \"shortcut_counselor_performance\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Counselor Performance\", \"col\": 4}}, {\"id\": \"shortcut_country_wise_applications\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Country Wise Applications\", \"col\": 4}}, {\"id\": \"shortcut_language_test_score\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Language Test Score\", \"col\": 4}}, {\"id\": \"shortcut_intake_calendar_entry\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Intake Calendar Entry\", \"col\": 4}}, {\"id\": \"shortcut_eco_follow_up_task\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"ECO Follow-up Task\", \"col\": 4}}, {\"id\": \"shortcut_offer_letter\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Offer Letter\", \"col\": 4}}, {\"id\": \"shortcut_student_fee_structure\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Student Fee Structure\", \"col\": 4}}, {\"id\": \"shortcut_eco_settings\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"ECO Settings\", \"col\": 4}}, {\"id\": \"shortcut_whatsapp_message_log\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"WhatsApp Message Log\", \"col\": 4}}, {\"id\": \"shortcut_score_readiness_report\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Score Readiness Report\", \"col\": 4}}, {\"id\": \"shortcut_upcoming_deadlines_report\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Upcoming Deadlines Report\", \"col\": 4}}, {\"id\": \"shortcut_my_tasks_today\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"My Tasks Today\", \"col\": 4}}, {\"id\": \"shortcut_fee_collection_report\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Fee Collection Report\", \"col\": 4}}, {\"id\": \"shortcut_document_expiry_report\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Document Expiry Report\", \"col\": 4}}]",
  "creation": "2026-02-23 01:02:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
@@ -102,6 +102,126 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Language Test Score",
+   "link_count": 0,
+   "link_to": "Language Test Score",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Intake Calendar Entry",
+   "link_count": 0,
+   "link_to": "Intake Calendar Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ECO Follow-up Task",
+   "link_count": 0,
+   "link_to": "ECO Follow-up Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Offer Letter",
+   "link_count": 0,
+   "link_to": "Offer Letter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student Fee Structure",
+   "link_count": 0,
+   "link_to": "Student Fee Structure",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "ECO Settings",
+   "link_count": 0,
+   "link_to": "ECO Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "WhatsApp Message Log",
+   "link_count": 0,
+   "link_to": "WhatsApp Message Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Score Readiness Report",
+   "link_count": 0,
+   "link_to": "Score Readiness Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Upcoming Deadlines Report",
+   "link_count": 0,
+   "link_to": "Upcoming Deadlines Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "My Tasks Today",
+   "link_count": 0,
+   "link_to": "My Tasks Today",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fee Collection Report",
+   "link_count": 0,
+   "link_to": "Fee Collection Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Document Expiry Report",
+   "link_count": 0,
+   "link_to": "Document Expiry Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
  "modified": "2026-02-23 01:02:00.000000",
@@ -137,12 +257,6 @@
   },
   {
    "role": "ECO Counselor"
-  },
-  {
-   "role": "ECO Visa Officer"
-  },
-  {
-   "role": "ECO Accounts"
   }
  ],
  "sequence_id": 10.0,
@@ -207,6 +321,90 @@
    "doc_view": "Report",
    "label": "Country Wise Applications",
    "link_to": "Country Wise Applications",
+   "stats_filter": "[]",
+   "type": "Report"
+  },
+  {
+   "doc_view": "",
+   "label": "Language Test Score",
+   "link_to": "Language Test Score",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Intake Calendar Entry",
+   "link_to": "Intake Calendar Entry",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "ECO Follow-up Task",
+   "link_to": "ECO Follow-up Task",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Offer Letter",
+   "link_to": "Offer Letter",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Student Fee Structure",
+   "link_to": "Student Fee Structure",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "ECO Settings",
+   "link_to": "ECO Settings",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "WhatsApp Message Log",
+   "link_to": "WhatsApp Message Log",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Report",
+   "label": "Score Readiness Report",
+   "link_to": "Score Readiness Report",
+   "stats_filter": "[]",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Report",
+   "label": "Upcoming Deadlines Report",
+   "link_to": "Upcoming Deadlines Report",
+   "stats_filter": "[]",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Report",
+   "label": "My Tasks Today",
+   "link_to": "My Tasks Today",
+   "stats_filter": "[]",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Report",
+   "label": "Fee Collection Report",
+   "link_to": "Fee Collection Report",
+   "stats_filter": "[]",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Report",
+   "label": "Document Expiry Report",
+   "link_to": "Document Expiry Report",
    "stats_filter": "[]",
    "type": "Report"
   }

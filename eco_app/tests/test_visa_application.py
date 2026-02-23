@@ -30,6 +30,11 @@ class TestVisaApplication(FrappeTestCase):
 
     def test_workflow_approved_updates_student_stage(self):
         visa = self.make_visa_application()
+        
+        # Bypass strict stage validation for the test by injecting the prerequisite stage directly
+        frappe.db.set_value("Student Profile", visa.student_profile, "application_stage", "Visa Applied")
+        frappe.db.commit()
+        
         visa.visa_status = "Approved"
         visa.decision_date = frappe.utils.nowdate()
         visa.save(ignore_permissions=True)

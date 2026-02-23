@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "creation": "2026-02-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_section",
+  "title",
+  "entry_type",
+  "deadline_date",
+  "column_break_1",
+  "alert_days_before",
+  "alert_sent",
+  "company",
+  "intake_details_section",
+  "university",
+  "course",
+  "column_break_2",
+  "intake_month",
+  "intake_year",
+  "link_section",
+  "linked_student",
+  "linked_application",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General Details"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entry_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Entry Type",
+   "options": "Application Deadline\nIntake Start\nVisa Deadline\nScholarship Deadline\nDocument Deadline\nAppointment\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "deadline_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Deadline / Event Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "30",
+   "fieldname": "alert_days_before",
+   "fieldtype": "Int",
+   "label": "Alert Days Before"
+  },
+  {
+   "default": "0",
+   "fieldname": "alert_sent",
+   "fieldtype": "Check",
+   "label": "Alert Sent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "intake_details_section",
+   "fieldtype": "Section Break",
+   "label": "Intake & University Details"
+  },
+  {
+   "fieldname": "university",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "University",
+   "options": "University Master"
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course Master"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "intake_month",
+   "fieldtype": "Select",
+   "label": "Intake Month",
+   "options": "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec"
+  },
+  {
+   "fieldname": "intake_year",
+   "fieldtype": "Int",
+   "label": "Intake Year"
+  },
+  {
+   "fieldname": "link_section",
+   "fieldtype": "Section Break",
+   "label": "Linked References"
+  },
+  {
+   "fieldname": "linked_student",
+   "fieldtype": "Link",
+   "label": "Linked Student",
+   "options": "Student Profile"
+  },
+  {
+   "fieldname": "linked_application",
+   "fieldtype": "Link",
+   "label": "Linked Application",
+   "options": "Student Application"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "ECO App",
+ "name": "Intake Calendar Entry",
+ "naming_rule": "Expression",
+ "autoname": "ECO-ICE-.YYYY.-.####",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "write": 1,
+   "role": "ECO Counselor"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "write": 1,
+   "role": "ECO Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -119,7 +119,7 @@
         "state": "Acceptance Confirmed",
         "action": "Apply Visa",
         "next_state": "Visa Applied",
-        "allowed": "ECO Visa Officer"
+        "allowed": "ECO Counselor"
       },
       {
         "state": "Acceptance Confirmed",
@@ -131,7 +131,7 @@
         "state": "Visa Applied",
         "action": "Approve Visa",
         "next_state": "Visa Approved",
-        "allowed": "ECO Visa Officer"
+        "allowed": "ECO Counselor"
       },
       {
         "state": "Visa Applied",
@@ -143,7 +143,7 @@
         "state": "Visa Applied",
         "action": "Reject Visa",
         "next_state": "Visa Rejected",
-        "allowed": "ECO Visa Officer"
+        "allowed": "ECO Counselor"
       },
       {
         "state": "Visa Applied",
