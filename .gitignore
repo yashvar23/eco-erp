@@ -9,3 +9,4 @@ dist/
 site_config.json
 *.sqlite
 .bench
+.clinerules/
