@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-23 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "student_profile",
+  "application_date",
+  "university",
+  "course",
+  "intake_month",
+  "intake_year",
+  "intake_date",
+  "counselor",
+  "stage",
+  "application_status",
+  "offer_letter",
+  "tuition_fee",
+  "scholarship_amount",
+  "net_payable",
+  "expected_commission",
+  "visa_eligible",
+  "remarks",
+  "company",
+  "status"
+ ],
+ "fields": [
+  {
+   "default": "ECO-APP-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ECO-APP-.YYYY.-.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Profile",
+   "options": "Student Profile",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "university",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "University",
+   "options": "University Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Course",
+   "options": "Course Master",
+   "reqd": 1
+  },
+  {
+   "fieldname": "intake_month",
+   "fieldtype": "Select",
+   "label": "Intake Month",
+   "options": "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug\nSep\nOct\nNov\nDec",
+   "reqd": 1
+  },
+  {
+   "fieldname": "intake_year",
+   "fieldtype": "Int",
+   "label": "Intake Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "intake_date",
+   "fieldtype": "Date",
+   "label": "Intake Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "counselor",
+   "fieldtype": "Link",
+   "label": "Counselor",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "stage",
+   "fieldtype": "Select",
+   "label": "Stage",
+   "options": "Draft\nSubmitted\nOffer Received\nAccepted\nRejected\nClosed",
+   "reqd": 1
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "application_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Application Status",
+   "options": "In Progress\nApplied\nOffer Received\nAcceptance Confirmed\nWithdrawn",
+   "reqd": 1
+  },
+  {
+   "fieldname": "offer_letter",
+   "fieldtype": "Attach",
+   "label": "Offer Letter"
+  },
+  {
+   "fieldname": "tuition_fee",
+   "fieldtype": "Currency",
+   "label": "Tuition Fee"
+  },
+  {
+   "fieldname": "scholarship_amount",
+   "fieldtype": "Currency",
+   "label": "Scholarship Amount"
+  },
+  {
+   "fieldname": "net_payable",
+   "fieldtype": "Currency",
+   "label": "Net Payable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expected_commission",
+   "fieldtype": "Currency",
+   "label": "Expected Commission",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "visa_eligible",
+   "fieldtype": "Check",
+   "label": "Visa Eligible",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOn Hold\nClosed",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "ECO App",
+ "name": "Student Application",
+ "naming_rule": "By \"Naming Series\" field",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECO Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECO Counselor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "ECO Accounts"
+  },
+  {
+   "read": 1,
+   "role": "ECO Visa Officer"
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "ECO Student"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

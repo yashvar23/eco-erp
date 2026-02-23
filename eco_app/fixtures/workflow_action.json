@@ -1,0 +1,62 @@
+[
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Apply Visa",
+    "workflow_action_name": "Apply Visa"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Approve Visa",
+    "workflow_action_name": "Approve Visa"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Assign Counselor",
+    "workflow_action_name": "Assign Counselor"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Close Case",
+    "workflow_action_name": "Close Case"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Confirm Acceptance",
+    "workflow_action_name": "Confirm Acceptance"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Enroll Student",
+    "workflow_action_name": "Enroll Student"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Mark Applied",
+    "workflow_action_name": "Mark Applied"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Mark Offer Received",
+    "workflow_action_name": "Mark Offer Received"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Re-counsel",
+    "workflow_action_name": "Re-counsel"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Reject Visa",
+    "workflow_action_name": "Reject Visa"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Request Documents",
+    "workflow_action_name": "Request Documents"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Verify Documents",
+    "workflow_action_name": "Verify Documents"
+  }
+]

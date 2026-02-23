@@ -1,0 +1,216 @@
+[
+  {
+    "doctype": "Workflow",
+    "name": "Student Journey Workflow",
+    "workflow_name": "Student Journey Workflow",
+    "document_type": "Student Profile",
+    "is_active": 1,
+    "override_status": 0,
+    "send_email_alert": 0,
+    "workflow_state_field": "application_stage",
+    "states": [
+      {
+        "state": "New Inquiry",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Counseling",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Documents Pending",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Applied",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Offer Received",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Acceptance Confirmed",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Visa Applied",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Visa Approved",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Enrolled",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Visa Rejected",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      },
+      {
+        "state": "Closed",
+        "doc_status": "0",
+        "allow_edit": "ECO Manager"
+      }
+    ],
+    "transitions": [
+      {
+        "state": "New Inquiry",
+        "action": "Assign Counselor",
+        "next_state": "Counseling",
+        "allowed": "ECO Manager",
+        "condition": "doc.assigned_counselor"
+      },
+      {
+        "state": "Counseling",
+        "action": "Request Documents",
+        "next_state": "Documents Pending",
+        "allowed": "ECO Counselor"
+      },
+      {
+        "state": "Counseling",
+        "action": "Request Documents",
+        "next_state": "Documents Pending",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Documents Pending",
+        "action": "Verify Documents",
+        "next_state": "Applied",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Applied",
+        "action": "Mark Offer Received",
+        "next_state": "Offer Received",
+        "allowed": "ECO Counselor"
+      },
+      {
+        "state": "Applied",
+        "action": "Mark Offer Received",
+        "next_state": "Offer Received",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Offer Received",
+        "action": "Confirm Acceptance",
+        "next_state": "Acceptance Confirmed",
+        "allowed": "ECO Counselor"
+      },
+      {
+        "state": "Offer Received",
+        "action": "Confirm Acceptance",
+        "next_state": "Acceptance Confirmed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Acceptance Confirmed",
+        "action": "Apply Visa",
+        "next_state": "Visa Applied",
+        "allowed": "ECO Visa Officer"
+      },
+      {
+        "state": "Acceptance Confirmed",
+        "action": "Apply Visa",
+        "next_state": "Visa Applied",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Visa Applied",
+        "action": "Approve Visa",
+        "next_state": "Visa Approved",
+        "allowed": "ECO Visa Officer"
+      },
+      {
+        "state": "Visa Applied",
+        "action": "Approve Visa",
+        "next_state": "Visa Approved",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Visa Applied",
+        "action": "Reject Visa",
+        "next_state": "Visa Rejected",
+        "allowed": "ECO Visa Officer"
+      },
+      {
+        "state": "Visa Applied",
+        "action": "Reject Visa",
+        "next_state": "Visa Rejected",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Visa Approved",
+        "action": "Enroll Student",
+        "next_state": "Enrolled",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Visa Rejected",
+        "action": "Re-counsel",
+        "next_state": "Counseling",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "New Inquiry",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Counseling",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Documents Pending",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Applied",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Offer Received",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Acceptance Confirmed",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Visa Applied",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      },
+      {
+        "state": "Visa Approved",
+        "action": "Close Case",
+        "next_state": "Closed",
+        "allowed": "ECO Manager"
+      }
+    ]
+  }
+]

@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-02-23 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "student_profile",
+  "student_application",
+  "visa_country",
+  "visa_type",
+  "appointment_date",
+  "biometrics_date",
+  "file_submission_date",
+  "decision_date",
+  "visa_status",
+  "rejection_reason",
+  "visa_document",
+  "handled_by",
+  "company",
+  "status"
+ ],
+ "fields": [
+  {
+   "default": "ECO-VIS-.YYYY.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "ECO-VIS-.YYYY.-.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_profile",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Profile",
+   "options": "Student Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "student_application",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Application",
+   "options": "Student Application",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visa_country",
+   "fieldtype": "Link",
+   "label": "Visa Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "default": "Student Visa",
+   "fieldname": "visa_type",
+   "fieldtype": "Select",
+   "label": "Visa Type",
+   "options": "Study Permit\nStudent Visa",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Datetime",
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "biometrics_date",
+   "fieldtype": "Date",
+   "label": "Biometrics Date"
+  },
+  {
+   "fieldname": "file_submission_date",
+   "fieldtype": "Date",
+   "label": "File Submission Date"
+  },
+  {
+   "fieldname": "decision_date",
+   "fieldtype": "Date",
+   "label": "Decision Date"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "visa_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Visa Status",
+   "options": "Draft\nFiled\nUnder Review\nApproved\nRejected\nWithdrawn",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rejection_reason",
+   "fieldtype": "Small Text",
+   "label": "Rejection Reason"
+  },
+  {
+   "fieldname": "visa_document",
+   "fieldtype": "Attach",
+   "label": "Visa Document"
+  },
+  {
+   "fieldname": "handled_by",
+   "fieldtype": "Link",
+   "label": "Handled By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nClosed",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "ECO App",
+ "name": "Visa Application",
+ "naming_rule": "By \"Naming Series\" field",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECO Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "ECO Counselor"
+  },
+  {
+   "read": 1,
+   "role": "ECO Accounts"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ECO Visa Officer",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "ECO Student"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}

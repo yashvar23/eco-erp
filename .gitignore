@@ -1,0 +1,58 @@
+# ECO App — .gitignore
+# Rule 9: Never commit site_config.json or any file containing passwords
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Distribution / build artifacts (always regenerated)
+*.egg-info/
+*.egg
+dist/
+build/
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Frappe / bench generated assets (rebuilt with `bench build`)
+eco_app/public/dist/
+public/dist/
+
+# Node dependencies (reinstalled with yarn/npm install)
+node_modules/
+eco_app/public/node_modules/
+
+# Frappe site config (contains DB passwords — NEVER commit)
+site_config.json
+
+# Python virtual environments
+env/
+venv/
+.venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Pytest
+.pytest_cache/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+eco_app/eco_app/

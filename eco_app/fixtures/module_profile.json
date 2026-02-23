@@ -1,0 +1,69 @@
+[
+  {
+    "doctype": "Module Profile",
+    "name": "ECO Staff",
+    "module_profile_name": "ECO Staff",
+    "block_modules": [
+      {
+        "doctype": "Block Module",
+        "module": "Assets"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Buying"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Bulk Transaction"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Communication"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "EDI"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "ERPNext Integrations"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Maintenance"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Manufacturing"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Portal"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Quality Management"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Regional"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Stock"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Subcontracting"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Telephony"
+      },
+      {
+        "doctype": "Block Module",
+        "module": "Utilities"
+      }
+    ]
+  }
+]

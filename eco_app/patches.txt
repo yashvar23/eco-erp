@@ -1,0 +1,7 @@
+# Copyright (c) 2025, European Concept Overseas
+# License: MIT
+# Author: ECO Dev Team
+
+# Patches for eco_app
+# Keep this file sorted by execution order.
+# No active patches in Phase 0.

@@ -1,0 +1,79 @@
+[
+  {
+    "doctype": "Workflow State",
+    "name": "Acceptance Confirmed",
+    "doc_status": "0",
+    "style": "Primary",
+    "workflow_state_name": "Acceptance Confirmed"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Applied",
+    "doc_status": "0",
+    "style": "Primary",
+    "workflow_state_name": "Applied"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Closed",
+    "doc_status": "0",
+    "style": "Dark Grey",
+    "workflow_state_name": "Closed"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Counseling",
+    "doc_status": "0",
+    "style": "Blue",
+    "workflow_state_name": "Counseling"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Documents Pending",
+    "doc_status": "0",
+    "style": "Orange",
+    "workflow_state_name": "Documents Pending"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Enrolled",
+    "doc_status": "0",
+    "style": "Green",
+    "workflow_state_name": "Enrolled"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "New Inquiry",
+    "doc_status": "0",
+    "style": "Gray",
+    "workflow_state_name": "New Inquiry"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Offer Received",
+    "doc_status": "0",
+    "style": "Blue",
+    "workflow_state_name": "Offer Received"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Visa Applied",
+    "doc_status": "0",
+    "style": "Orange",
+    "workflow_state_name": "Visa Applied"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Visa Approved",
+    "doc_status": "0",
+    "style": "Green",
+    "workflow_state_name": "Visa Approved"
+  },
+  {
+    "doctype": "Workflow State",
+    "name": "Visa Rejected",
+    "doc_status": "0",
+    "style": "Red",
+    "workflow_state_name": "Visa Rejected"
+  }
+]

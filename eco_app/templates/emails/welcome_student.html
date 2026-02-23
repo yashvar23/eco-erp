@@ -1,0 +1,33 @@
+<!-- Copyright (c) 2026, European Concept Overseas -->
+<!-- License: Proprietary and Confidential. All rights reserved. -->
+<!-- Author: Yashvardhan -->
+
+<div style="font-family:Inter,Arial,sans-serif;color:#1f2937;line-height:1.6;">
+  <img src="/assets/eco_app/images/eco_logo.png" alt="European Concept Overseas" style="width:150px;height:auto;margin:0 0 12px 0;display:block;" />
+  <h2 style="color:#0B2E6B;margin-bottom:8px;">Welcome to ECO ERP</h2>
+  <p>Hello {{ student_name or "Student" }},</p>
+  <p>
+    Welcome to <strong style="color:#0B2E6B;">European Concept Overseas</strong>.
+    Your profile has been created and your journey stage is
+    <strong style="color:#C62828;">{{ application_stage or "New Inquiry" }}</strong>.
+  </p>
+  <table style="width:100%;border-collapse:collapse;margin:12px 0;background:#f8fafc;">
+    <tr>
+      <td style="padding:8px;border:1px solid #e5e7eb;"><strong>Application Ref</strong></td>
+      <td style="padding:8px;border:1px solid #e5e7eb;">{{ application_name or "Will be assigned" }}</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border:1px solid #e5e7eb;"><strong>Preferred University</strong></td>
+      <td style="padding:8px;border:1px solid #e5e7eb;">{{ university_name or "To be finalized" }}</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border:1px solid #e5e7eb;"><strong>Counselor</strong></td>
+      <td style="padding:8px;border:1px solid #e5e7eb;">{{ counselor_name or "Assigned Soon" }}</td>
+    </tr>
+  </table>
+  <p>
+    You can track updates anytime from your portal:
+    <a href="{{ portal_url }}" style="color:#0B2E6B;">{{ portal_url }}</a>
+  </p>
+  {% include "templates/emails/includes/eco_footer.html" %}
+</div>

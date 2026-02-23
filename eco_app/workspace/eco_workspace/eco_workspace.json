@@ -1,0 +1,215 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"header_kpi\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>KPI Overview</span>\",\"col\":12}},{\"id\":\"nc_total_students\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Students\",\"col\":3}},{\"id\":\"nc_active_apps\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Applications\",\"col\":3}},{\"id\":\"nc_visa_approvals\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Visa Approvals\",\"col\":3}},{\"id\":\"nc_total_commissions\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Commissions\",\"col\":3}},{\"id\":\"header_operations\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>Operations</span>\",\"col\":12}},{\"id\":\"shortcut_student_profile\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Profile\",\"col\":3}},{\"id\":\"shortcut_student_application\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Application\",\"col\":3}},{\"id\":\"shortcut_visa_application\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Visa Application\",\"col\":3}},{\"id\":\"shortcut_commission_record\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Commission Record\",\"col\":3}},{\"id\":\"header_masters\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>Masters</span>\",\"col\":12}},{\"id\":\"shortcut_university_master\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"University Master\",\"col\":3}},{\"id\":\"shortcut_course_master\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Course Master\",\"col\":3}},{\"id\":\"header_reports\",\"type\":\"header\",\"data\":{\"text\":\"<span style='color:#0B2E6B'>Reports</span>\",\"col\":12}},{\"id\":\"shortcut_monthly_applications\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Monthly Applications\",\"col\":4}},{\"id\":\"shortcut_counselor_performance\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Counselor Performance\",\"col\":4}},{\"id\":\"shortcut_country_wise_applications\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Country Wise Applications\",\"col\":4}}]",
+ "creation": "2026-02-23 01:02:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "graduation-cap",
+ "idx": 0,
+ "indicator_color": "#0B2E6B",
+ "is_hidden": 0,
+ "label": "ECO Workspace",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student Profile",
+   "link_count": 0,
+   "link_to": "Student Profile",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "University Master",
+   "link_count": 0,
+   "link_to": "University Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Course Master",
+   "link_count": 0,
+   "link_to": "Course Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Student Application",
+   "link_count": 0,
+   "link_to": "Student Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Visa Application",
+   "link_count": 0,
+   "link_to": "Visa Application",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Commission Record",
+   "link_count": 0,
+   "link_to": "Commission Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Monthly Applications",
+   "link_count": 0,
+   "link_to": "Monthly Applications",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Counselor Performance",
+   "link_count": 0,
+   "link_to": "Counselor Performance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Country Wise Applications",
+   "link_count": 0,
+   "link_to": "Country Wise Applications",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-02-23 01:02:00.000000",
+ "modified_by": "Administrator",
+ "module": "ECO App",
+ "name": "ECO Workspace",
+ "number_cards": [
+  {
+   "label": "Total Students",
+   "number_card_name": "Total Students"
+  },
+  {
+   "label": "Active Applications",
+   "number_card_name": "Active Applications"
+  },
+  {
+   "label": "Visa Approvals",
+   "number_card_name": "Visa Approvals"
+  },
+  {
+   "label": "Total Commissions",
+   "number_card_name": "Total Commissions"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [
+  {
+   "role": "ECO Manager"
+  },
+  {
+   "role": "ECO Counselor"
+  },
+  {
+   "role": "ECO Visa Officer"
+  },
+  {
+   "role": "ECO Accounts"
+  }
+ ],
+ "sequence_id": 10.0,
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Student Profile",
+   "link_to": "Student Profile",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "University Master",
+   "link_to": "University Master",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Course Master",
+   "link_to": "Course Master",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Student Application",
+   "link_to": "Student Application",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Visa Application",
+   "link_to": "Visa Application",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Commission Record",
+   "link_to": "Commission Record",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "Report",
+   "label": "Monthly Applications",
+   "link_to": "Monthly Applications",
+   "stats_filter": "[]",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Report",
+   "label": "Counselor Performance",
+   "link_to": "Counselor Performance",
+   "stats_filter": "[]",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Report",
+   "label": "Country Wise Applications",
+   "link_to": "Country Wise Applications",
+   "stats_filter": "[]",
+   "type": "Report"
+  }
+ ],
+ "title": "ECO Workspace"
+}

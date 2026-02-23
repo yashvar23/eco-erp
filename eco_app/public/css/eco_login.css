@@ -1,0 +1,25 @@
+/* Copyright (c) 2026, European Concept Overseas */
+/* License: Proprietary and Confidential. All rights reserved. */
+/* Author: Yashvardhan */
+
+body {
+    background: #0B2E6B;
+}
+
+.eco-login-card .btn-primary {
+    background: #0B2E6B;
+    border-color: #0B2E6B;
+}
+
+.eco-login-card .btn-primary:hover {
+    background: #C62828;
+    border-color: #C62828;
+}
+
+.eco-login-logo {
+    content: url('/assets/eco_app/images/eco_logo.png');
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+}

@@ -1,0 +1,121 @@
+/* Copyright (c) 2026, European Concept Overseas */
+/* License: Proprietary and Confidential. All rights reserved. */
+/* Author: Yashvardhan */
+
+:root {
+    --eco-primary: #0B2E6B;
+    --eco-secondary: #C62828;
+    --eco-primary-contrast: #ffffff;
+    --eco-bg-soft: #f7f9fc;
+    --eco-text: #1f2937;
+    --eco-success: #28A745;
+    --eco-danger: #DC3545;
+    --eco-light-bg: #F8F9FA;
+}
+
+body,
+.layout-main-section {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--eco-text);
+}
+
+.navbar {
+    background: var(--eco-primary);
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-brand span,
+.navbar .nav-link {
+    color: var(--eco-primary-contrast) !important;
+}
+
+.navbar .navbar-brand img {
+    content: url('/assets/eco_app/images/eco_logo.png');
+    height: 40px;
+    width: auto;
+}
+
+.desk-sidebar .standard-sidebar-item:hover,
+.desk-sidebar .standard-sidebar-item.selected {
+    background: rgba(11, 46, 107, 0.08);
+    color: var(--eco-primary);
+}
+
+.btn-primary {
+    background-color: var(--eco-primary);
+    border-color: var(--eco-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0a285d;
+    border-color: #0a285d;
+}
+
+.btn-secondary {
+    background-color: var(--eco-secondary);
+    border-color: var(--eco-secondary);
+    color: #ffffff;
+}
+
+a,
+.text-primary {
+    color: var(--eco-primary) !important;
+}
+
+.indicator-pill,
+.badge {
+    border-radius: 999px;
+}
+
+.indicator-pill.blue,
+.indicator-pill.orange,
+.indicator-pill.green {
+    background-color: rgba(198, 40, 40, 0.1);
+    color: var(--eco-secondary);
+}
+
+.page-head,
+.form-page .title-area,
+.workspace-card,
+.widget,
+.number-card {
+    border-top: 2px solid var(--eco-primary);
+}
+
+.eco-dashboard-widget {
+    background: #ffffff;
+    border: 1px solid rgba(11, 46, 107, 0.1);
+    border-radius: 12px;
+}
+
+.eco-login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--eco-primary), #123f8f);
+}
+
+.eco-login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+}
+
+.eco-login-logo {
+    content: url('/assets/eco_app/images/eco_logo.png');
+    height: 80px;
+    width: auto;
+    margin: 0 auto 12px;
+    display: block;
+}
+
+.eco-login-title {
+    text-align: center;
+    font-weight: 700;
+    color: var(--eco-primary);
+}

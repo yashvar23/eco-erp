@@ -1,0 +1,21 @@
+# Copyright (c) 2025, European Concept Overseas
+# License: MIT
+# Author: ECO Dev Team
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eco_app"
+version = "1.0.0"
+description = "ECO App for European Concept Overseas on Frappe/ERPNext v17"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "European Concept Overseas" }
+]
+
+[tool.setuptools]
+include-package-data = true

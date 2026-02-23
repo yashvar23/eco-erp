@@ -1,0 +1,12 @@
+[
+  {
+    "doctype": "Letter Head",
+    "name": "ECO Default Letterhead",
+    "letter_head_name": "ECO Default Letterhead",
+    "is_default": 1,
+    "disabled": 0,
+    "source": "HTML",
+    "content": "<div style='font-family:Inter,Arial,sans-serif;border-bottom:2px solid #0B2E6B;padding-bottom:10px;margin-bottom:10px;display:flex;align-items:center;gap:12px;'><img src='/assets/eco_app/images/eco_logo.png' alt='European Concept Overseas' style='height:48px;width:auto;'><div><h2 style='margin:0;color:#0B2E6B;'>European Concept Overseas</h2><div style='font-size:12px;color:#374151;'>JTM Mall Jagatpura Jaipur<br>Phone: +91 9166879877 | Email: info@europeanconcept.com</div></div></div>",
+    "footer": "<div style='font-size:11px;color:#6b7280;border-top:1px solid #e5e7eb;padding-top:8px;'>ECO ERP | European Concept Overseas</div>"
+  }
+]

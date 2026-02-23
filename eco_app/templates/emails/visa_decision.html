@@ -1,0 +1,29 @@
+<!-- Copyright (c) 2026, European Concept Overseas -->
+<!-- License: Proprietary and Confidential. All rights reserved. -->
+<!-- Author: Yashvardhan -->
+
+<div style="font-family:Inter,Arial,sans-serif;color:#1f2937;line-height:1.6;">
+  <img src="/assets/eco_app/images/eco_logo.png" alt="European Concept Overseas" style="width:150px;height:auto;margin:0 0 12px 0;display:block;" />
+  <h2 style="color:#0B2E6B;margin-bottom:8px;">Visa Decision Update</h2>
+  <p>Hello {{ student_name or "Student" }},</p>
+  <p>Your visa processing status has changed.</p>
+  <table style="width:100%;border-collapse:collapse;margin:12px 0;background:#f8fafc;">
+    <tr>
+      <td style="padding:8px;border:1px solid #e5e7eb;"><strong>Application</strong></td>
+      <td style="padding:8px;border:1px solid #e5e7eb;">{{ application_name or "N/A" }}</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border:1px solid #e5e7eb;"><strong>Visa Status</strong></td>
+      <td style="padding:8px;border:1px solid #e5e7eb;color:#C62828;">{{ visa_status or "Under Review" }}</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border:1px solid #e5e7eb;"><strong>Counselor</strong></td>
+      <td style="padding:8px;border:1px solid #e5e7eb;">{{ counselor_name or "Assigned Counselor" }}</td>
+    </tr>
+  </table>
+  <p>
+    Track your case in the portal:
+    <a href="{{ portal_url }}" style="color:#0B2E6B;">{{ portal_url }}</a>
+  </p>
+  {% include "templates/emails/includes/eco_footer.html" %}
+</div>

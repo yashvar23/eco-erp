@@ -1,0 +1,37 @@
+[
+  {
+    "doctype": "Role",
+    "name": "ECO Accounts",
+    "desk_access": 1,
+    "is_custom": 1,
+    "role_name": "ECO Accounts"
+  },
+  {
+    "doctype": "Role",
+    "name": "ECO Counselor",
+    "desk_access": 1,
+    "is_custom": 1,
+    "role_name": "ECO Counselor"
+  },
+  {
+    "doctype": "Role",
+    "name": "ECO Manager",
+    "desk_access": 1,
+    "is_custom": 1,
+    "role_name": "ECO Manager"
+  },
+  {
+    "doctype": "Role",
+    "name": "ECO Student",
+    "desk_access": 0,
+    "is_custom": 1,
+    "role_name": "ECO Student"
+  },
+  {
+    "doctype": "Role",
+    "name": "ECO Visa Officer",
+    "desk_access": 1,
+    "is_custom": 1,
+    "role_name": "ECO Visa Officer"
+  }
+]

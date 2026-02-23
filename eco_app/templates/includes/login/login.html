@@ -1,0 +1,41 @@
+<!-- Copyright (c) 2026, European Concept Overseas -->
+<!-- License: Proprietary and Confidential. All rights reserved. -->
+<!-- Author: Yashvardhan -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECO ERP</title>
+    <link rel="icon" type="image/x-icon" href="/assets/eco_app/images/eco_favicon.ico" />
+    <link rel="stylesheet" href="/assets/eco_app/css/eco_app.bundle.css" />
+</head>
+<body>
+    <div class="eco-login-wrapper">
+        <div class="eco-login-card">
+            <img class="eco-login-logo" src="/assets/eco_app/images/eco_logo.png" alt="European Concept Overseas" />
+            <h1 class="eco-login-title">ECO ERP</h1>
+            <p style="text-align:center;color:#0B2E6B;margin-top:-4px;">European Concept Overseas</p>
+
+            <div id="login-area">
+                <!-- Frappe login form mount point; keep functional controls in place -->
+                <form class="form-signin" role="form" onsubmit="return false;">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="login_email" placeholder="Email or Username" autocomplete="username" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="login_password" placeholder="Password" autocomplete="current-password" />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block" type="button">Login</button>
+                    </div>
+                    <div class="form-group" style="text-align:right;">
+                        <a href="/forgot">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
