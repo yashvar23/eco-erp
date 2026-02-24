@@ -7,7 +7,7 @@ from frappe import _
 from frappe.model.document import Document
 from frappe.utils import today
 
-from eco_app.eco_app.utils.helpers import ensure_company_selected
+from eco_app.utils.helpers import ensure_company_selected
 
 class OfferLetter(Document):
     def validate(self):

@@ -5,14 +5,14 @@
 import frappe
 from frappe.tests.utils import FrappeTestCase
 
-from eco_app.eco_app.doctype.student_application.student_application import (
+from eco_app.doctype.student_application.student_application import (
     create_commission_record_from_application,
     create_visa_application_from_student_application,
 )
-from eco_app.eco_app.tests.test_course_master import TestCourseMaster
-from eco_app.eco_app.tests.test_student_application import TestStudentApplication
-from eco_app.eco_app.tests.test_student_profile import TestStudentProfile
-from eco_app.eco_app.tests.test_university_master import TestUniversityMaster
+from eco_app.tests.test_course_master import TestCourseMaster
+from eco_app.tests.test_student_application import TestStudentApplication
+from eco_app.tests.test_student_profile import TestStudentProfile
+from eco_app.tests.test_university_master import TestUniversityMaster
 
 
 def _student_save(student, stage):

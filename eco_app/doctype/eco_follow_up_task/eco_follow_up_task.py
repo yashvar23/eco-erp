@@ -6,7 +6,7 @@ import frappe
 from frappe.model.document import Document
 from frappe.utils import now_datetime
 
-from eco_app.eco_app.utils.helpers import ensure_company_selected
+from eco_app.utils.helpers import ensure_company_selected
 
 class ECOFollowupTask(Document):
     def validate(self):

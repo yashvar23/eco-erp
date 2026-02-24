@@ -5,7 +5,7 @@
 import frappe
 from frappe.tests.utils import FrappeTestCase
 
-from eco_app.eco_app.tests.utils.test_helpers import get_test_company
+from eco_app.tests.utils.test_helpers import get_test_company
 
 
 class TestUniversityMaster(FrappeTestCase):

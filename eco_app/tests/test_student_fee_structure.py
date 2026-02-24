@@ -6,8 +6,8 @@ import frappe
 from frappe.tests.utils import FrappeTestCase
 from frappe.utils import add_days, today
 
-from eco_app.eco_app.tests.test_student_profile import TestStudentProfile
-from eco_app.eco_app.tests.utils.test_helpers import get_test_company
+from eco_app.tests.test_student_profile import TestStudentProfile
+from eco_app.tests.utils.test_helpers import get_test_company
 
 
 class TestStudentFeeStructure(FrappeTestCase):

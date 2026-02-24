@@ -4,7 +4,7 @@
 
 import frappe
 from frappe.tests.utils import FrappeTestCase
-from eco_app.eco_app.tests.test_student_profile import TestStudentProfile
+from eco_app.tests.test_student_profile import TestStudentProfile
 
 class TestWhatsAppIntegration(FrappeTestCase):
     def setUp(self):

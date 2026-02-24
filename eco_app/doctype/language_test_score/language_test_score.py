@@ -6,7 +6,7 @@ import frappe
 from frappe.model.document import Document
 from frappe.utils import add_years
 
-from eco_app.eco_app.utils.helpers import ensure_company_selected
+from eco_app.utils.helpers import ensure_company_selected
 
 
 class LanguageTestScore(Document):

@@ -15,36 +15,36 @@ app_include_css = ["/assets/eco_app/css/eco_app.bundle.css"]
 
 # ── Boot hook (Frappe v16: only extend_bootinfo is valid) ─────────────────────
 # boot_session was introduced in Frappe v17 — not used here (v16 target)
-extend_bootinfo = "eco_app.eco_app.branding.boot.extend_bootinfo"
+extend_bootinfo = "eco_app.branding.boot.extend_bootinfo"
 
 doc_events = {
     "Student Profile": {
-        "after_insert": "eco_app.eco_app.events.student.send_welcome_email",
-        "on_update": "eco_app.eco_app.events.student.on_stage_update",
+        "after_insert": "eco_app.events.student.send_welcome_email",
+        "on_update": "eco_app.events.student.on_stage_update",
     },
     "Student Application": {
-        "on_update": "eco_app.eco_app.events.application.on_status_update",
+        "on_update": "eco_app.events.application.on_status_update",
     },
     "Lead": {
-        "after_insert": "eco_app.eco_app.events.crm.sync_lead_to_student",
+        "after_insert": "eco_app.events.crm.sync_lead_to_student",
     },
 }
 
 # ── Scheduler tasks (full dotted path: package.module.function) ───────────────
-# Functions live in eco_app/eco_app/tasks/tasks.py → eco_app.eco_app.tasks.tasks.<fn>
+# Functions live in eco_app/eco_app/tasks/tasks.py → eco_app.tasks.tasks.<fn>
 scheduler_events = {
     "daily": [
-        "eco_app.eco_app.tasks.tasks.send_document_pending_reminders",
-        "eco_app.eco_app.tasks.tasks.check_upcoming_visa_appointments",
-        "eco_app.eco_app.tasks.tasks.check_document_expiry",
-        "eco_app.eco_app.tasks.tasks.check_score_expiry",
-        "eco_app.eco_app.tasks.tasks.check_intake_deadlines",
-        "eco_app.eco_app.tasks.tasks.check_overdue_tasks",
-        "eco_app.eco_app.tasks.tasks.check_offer_letter_deadlines",
-        "eco_app.eco_app.tasks.tasks.check_overdue_installments",
+        "eco_app.tasks.tasks.send_document_pending_reminders",
+        "eco_app.tasks.tasks.check_upcoming_visa_appointments",
+        "eco_app.tasks.tasks.check_document_expiry",
+        "eco_app.tasks.tasks.check_score_expiry",
+        "eco_app.tasks.tasks.check_intake_deadlines",
+        "eco_app.tasks.tasks.check_overdue_tasks",
+        "eco_app.tasks.tasks.check_offer_letter_deadlines",
+        "eco_app.tasks.tasks.check_overdue_installments",
     ],
     "weekly": [
-        "eco_app.eco_app.tasks.tasks.generate_weekly_counselor_summary",
+        "eco_app.tasks.tasks.generate_weekly_counselor_summary",
     ],
 }
 

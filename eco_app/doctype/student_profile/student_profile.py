@@ -9,7 +9,7 @@ from frappe import _
 from frappe.model.document import Document
 from frappe.utils import now_datetime, validate_email_address
 
-from eco_app.eco_app.utils.whatsapp import send_application_update
+from eco_app.utils.whatsapp import send_application_update
 
 
 STAGE_SEQUENCE = [

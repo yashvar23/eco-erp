@@ -6,8 +6,8 @@ import frappe
 from frappe.tests.utils import FrappeTestCase
 from frappe.utils import today, add_days
 
-from eco_app.eco_app.report.executive_summary_report.executive_summary_report import execute
-from eco_app.eco_app.tests.utils.test_helpers import get_test_company
+from eco_app.report.executive_summary_report.executive_summary_report import execute
+from eco_app.tests.utils.test_helpers import get_test_company
 
 
 class TestAnalyticsDashboard(FrappeTestCase):
