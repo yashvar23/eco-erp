@@ -409,5 +409,6 @@
    "type": "Report"
   }
  ],
- "title": "ECO Workspace"
+ "title": "ECO Workspace",
+ "type": "Workspace"
 }
